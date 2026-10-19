@@ -1,8 +1,14 @@
 import { computed, reactive } from 'vue'
 
-const stored = localStorage.getItem('theme')
+const query = window.matchMedia('(prefers-color-scheme: dark)')
+
+function stored() {
+  const value = localStorage.getItem('theme')
+  return value === 'dark' || value === 'light' ? value : null
+}
+
 const state = reactive({
-  theme: stored === 'dark' ? 'dark' : 'light',
+  theme: stored() || (query.matches ? 'dark' : 'light'),
 })
 
 function apply(theme) {
@@ -13,6 +19,12 @@ function apply(theme) {
 }
 
 apply(state.theme)
+
+query.addEventListener('change', (event) => {
+  if (stored()) return
+  state.theme = event.matches ? 'dark' : 'light'
+  apply(state.theme)
+})
 
 export function useTheme() {
   const theme = computed(() => state.theme)

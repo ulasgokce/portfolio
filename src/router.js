@@ -10,6 +10,7 @@ export default createRouter({
     { path: '/', name: 'home', component: Home },
     { path: '/about', name: 'about', component: () => import('./pages/About.vue') },
     { path: '/work', name: 'work', component: () => import('./pages/Work.vue') },
+    { path: '/growth', name: 'growth', component: () => import('./pages/Growth.vue') },
     { path: '/work/sigorta', redirect: '/work/vela' },
     // Remove when the Laz dictionary is published.
     { path: '/work/sozluk', redirect: '/work' },

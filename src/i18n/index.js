@@ -2,9 +2,15 @@ import { computed, reactive } from 'vue'
 import en from './en'
 import tr from './tr'
 
-const stored = localStorage.getItem('locale')
+function initialLocale() {
+  const stored = localStorage.getItem('locale')
+  if (stored === 'tr' || stored === 'en') return stored
+  const preferred = navigator.languages?.[0] || navigator.language || ''
+  return preferred.toLowerCase().startsWith('tr') ? 'tr' : 'en'
+}
+
 const state = reactive({
-  locale: stored === 'tr' ? 'tr' : 'en',
+  locale: initialLocale(),
 })
 
 const catalogs = { tr, en }

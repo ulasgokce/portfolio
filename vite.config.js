@@ -15,6 +15,10 @@ const pages = {
     title: 'Work — Ulaş Gökçe',
     description: 'What Ulaş Gökçe has built at Tendex and Sales Automation, plus Chrome extensions, Vela, and a studio website.',
   },
+  '/growth': {
+    title: 'Growth — Ulaş Gökçe',
+    description: 'Get found on Google and in AI answers. Websites, technical SEO, and AI visibility for companies.',
+  },
   '/work/sales-automation': {
     title: 'Sales Automation — Ulaş Gökçe',
     description: 'Software that lets sales teams run email, LinkedIn, and meetings from one place.',

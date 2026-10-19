@@ -76,5 +76,20 @@ const { t } = useI18n()
       <p class="max-w-xl font-serif text-3xl leading-snug text-ink sm:text-4xl">{{ t.home.ai }}</p>
       <RouterLink to="/work/eklentiler" class="mt-5 inline-flex text-sea hover:text-ink">{{ t.home.aiLink }}</RouterLink>
     </section>
+
+    <section class="mx-auto mb-20 max-w-6xl px-5 sm:mb-28 sm:px-8">
+      <div class="grid gap-6 border-t border-line pt-10 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div>
+          <p class="text-sm tracking-[0.18em] text-sea uppercase">{{ t.home.growthLabel }}</p>
+          <p class="mt-3 max-w-2xl font-serif text-3xl leading-snug sm:text-4xl">{{ t.home.growthTitle }}</p>
+        </div>
+        <RouterLink
+          to="/growth"
+          class="inline-flex w-fit border border-sea px-6 py-3 text-sea transition-colors hover:bg-sea hover:text-paper"
+        >
+          {{ t.home.growthLink }}
+        </RouterLink>
+      </div>
+    </section>
   </main>
 </template>

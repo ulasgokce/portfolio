@@ -6,6 +6,7 @@ export default {
   nav: {
     work: 'Work',
     about: 'About',
+    growth: 'Growth',
     github: 'GitHub',
     linkedin: 'LinkedIn',
     dark: 'Dark',
@@ -26,6 +27,9 @@ export default {
     ai: 'My favorite thing to build is a tool that makes someone’s day easier. If it fixes one of my own headaches too, even better.',
     photoAlt: 'Ulaş Gökçe',
     aiLink: 'See the extensions',
+    growthLabel: 'For companies',
+    growthTitle: 'I also help companies get found on Google and by AI assistants.',
+    growthLink: 'See how I work',
   },
   about: {
     metaTitle: 'About — Ulaş Gökçe',
@@ -70,6 +74,60 @@ export default {
     label: 'Work',
     title: 'What I’ve built at work, and what I’ve built on my own.',
     intro: 'Tendex from 2021 to 2024, Sales Automation since 2024. Alongside those: Chrome extensions, Vela for insurance agencies, and a website for a recording studio.',
+  },
+  growth: {
+    metaTitle: 'Growth — Ulaş Gökçe',
+    label: 'Growth consulting',
+    title: 'Get found on Google, and in the answers AI gives.',
+    intro: 'People don’t always click through search results anymore. They ask ChatGPT, Gemini, or Perplexity, or they read the AI summary at the top of Google. If your company isn’t part of those answers, a growing share of your customers never sees you. I help companies close that gap, starting with their website.',
+    shiftLabel: 'What changed',
+    shift: [
+      'Search used to be one race: rank high on Google. Now there are two. Classic search still matters, but AI models also read the web, decide which sources they trust, and recommend businesses by name. They favor sites that are fast, well structured, and easy for a machine to understand.',
+      'Most company websites weren’t built with either in mind. They look fine to a person, but to a search engine they’re slow, vague, and missing the signals that say who you are, what you do, and where you do it.',
+    ],
+    servicesLabel: 'What I do',
+    services: [
+      {
+        title: 'Websites built to be found',
+        body: 'Fast, modern sites where the structure, content, and code are set up for search engines and AI models from day one.',
+      },
+      {
+        title: 'Technical SEO',
+        body: 'Speed, indexing, structured data, sitemaps, and the other details that decide whether Google can read your site and trust it.',
+      },
+      {
+        title: 'AI visibility',
+        body: 'Making sure assistants like ChatGPT, Gemini, and Perplexity can find your company, understand it correctly, and recommend it.',
+      },
+      {
+        title: 'Measuring what matters',
+        body: 'Clear tracking, so you can see which changes bring in customers, not just traffic.',
+      },
+    ],
+    tipsLabel: 'Two things you can check today',
+    tips: [
+      {
+        title: 'Tell machines who you are',
+        body: 'Add structured data (schema.org) to your site: your company name, logo, address, phone number, opening hours, and links to your official profiles. Then make sure those details are written exactly the same way everywhere on the web. That’s how Google builds its knowledge panel, and how AI models piece scattered mentions of your company into one clear picture.',
+      },
+      {
+        title: 'Put the answer first',
+        body: 'List the questions your customers actually ask, and answer each one plainly on your site: a clear heading, then the answer itself in the first sentence or two. AI assistants quote pages that answer directly. Pages that bury the answer under a long introduction rarely get picked.',
+      },
+    ],
+    impactLabel: 'What it changes',
+    impacts: [
+      'More customers find you without you paying for every click.',
+      'When someone asks for what you offer, AI assistants mention your company by name.',
+      'A faster site keeps more visitors, and Google uses page speed as one of its ranking signals.',
+      'Your brand looks consistent everywhere, so people trust what they find.',
+    ],
+    moreTitle: 'These are only the starting points.',
+    moreBody: 'The real work depends on your market, your competitors, and how AI models describe your company today. That’s exactly what a full analysis covers: where you stand, what’s holding you back, and which steps will bring the biggest wins first.',
+    proof: 'This site is built the same way: structured data, share previews, a sitemap, and fast loading.',
+    ctaTitle: 'Let’s look at your site together.',
+    ctaBody: 'Send me your website and what you want to achieve. I’ll tell you honestly where you stand and what’s realistically possible.',
+    ctaLink: 'Message me on LinkedIn',
   },
   pieces: {
     'sales-automation': {
